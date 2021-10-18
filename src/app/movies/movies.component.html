@@ -1,0 +1,71 @@
+<!-- <div class="title">TITLE MOVIES
+    <ul>
+        <li *ngFor="let el of movies">
+            {{el.title}}
+        </li>
+    </ul>
+</div>
+
+
+<div>TITLE AND relaseData
+    <ul>
+        <li *ngFor="let el of movies">
+            {{el.title}}
+        </li>
+    </ul>
+    <ul>
+        <li *ngFor="let el of movies">
+            {{el.releaseDate}}
+        </li>
+    </ul>
+</div>
+
+<div>Title for reviews > 2
+    <ul *ngFor="let el of movies">
+        <li *ngIf="el.reviews > 2">
+            {{el.title}}
+        </li>
+
+    </ul>
+</div>
+
+<table >
+    <tr >
+        <th>Title</th>
+        <td *ngFor="let data of movies">{{data.title | uppercase}}</td>
+    </tr>
+    <tr >
+        <th>Director</th>
+        <td *ngFor="let data of movies">{{data.director}}</td>
+    </tr>
+    <tr>
+        <th>Cast</th>
+        <td *ngFor="let data of movies">{{data.cast}}</td>
+    </tr>
+    <tr>
+        <th>ReleaseDate</th>
+        <td *ngFor="let data of movies">{{data.releaseDate | dataa | date:"fullDate"}}</td>
+    </tr>
+    <tr>
+        <th>Reviews</th>
+        <td *ngFor="let data of movies" >{{data.reviews}}</td>
+    </tr>
+</table>
+
+
+<ul>
+    <li *ngFor="let komb of kombesi">{{komb | kombesi}}</li>
+</ul>  -->
+
+<p *ngIf="showText">hello world</p>
+<button (click)="clickButton()">Show</button> 
+
+
+<!-- <div *ngFor="let movie1 of movies">
+    <app-movie [moviechild]="movie1" (sendClickChild)="getClickedChild($event)"></app-movie>
+</div> -->
+
+<app-movie [moviechild]="movie">
+
+</app-movie>
+<hr>

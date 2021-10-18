@@ -1,0 +1,10 @@
+<app-persons-list></app-persons-list>
+
+<button (click)="incrementButton()">Increment</button>
+<button (click)="discrementButton()">Discrement</button>
+<app-counter [counterChild]="counter"></app-counter>
+
+<p *ngFor="let array of counterArray">
+    {{array}}
+</p>
+<p>{{shuma}}</p>

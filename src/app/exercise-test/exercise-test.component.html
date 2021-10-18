@@ -1,0 +1,20 @@
+<div *ngFor="let img of file">
+    {{img.name}} <br>
+    {{img.size | fileSize}} MB <br>
+    {{img.type}} <br><br>
+</div>
+
+<br><br>
+
+<button [style.backgroundColor]="color" (click)="changeColorButton()">Change color</button>
+
+<br><br>
+
+<input type="text" [(ngModel)]="inputValue1">
+<input type="text" name="2" [(ngModel)]="inputValue2"> 
+<button (click)="getValue()">See input value</button>
+<p *ngIf="isClick">{{inputValue1}} {{inputValue2}}</p>
+<!-- <p>{{displayValue[0]}} {{displayValue[1]}}</p> -->
+<!-- <p>{{inputValue2}}</p> -->
+<br><br><br>
+
